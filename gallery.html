@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Gallery</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome (for icons like back-to-top) -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      body {
+        background-color: #fafafa;
+        font-family: "Poppins", sans-serif;
+        padding: 10px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 40px 0 20px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .gallery-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Back to top button */
+      .back-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: #a0522d;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        z-index: 999;
+      }
+
+      .back-to-top:hover {
+        background: #7b3f1d;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+<a href="index.html">
+  <button class="back-button">Go Back</button>
+</a>
+    <h1>Our Café Gallery</h1>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+      <div class="gallery">
+        <img src="img/gallery/g1.png" alt="Café Image 1" />
+        <img src="img/gallery/g2.png" alt="Café Image 2" />
+        <img src="img/gallery/g3.png" alt="Café Image 3" />
+        <img src="img/gallery/g4.png" alt="Café Image 4" />
+        <img src="img/gallery/g0.png" alt="Café Image 5" />
+        <img src="img/gallery/g6.png" alt="Café Image 6" />
+        <img src="img/gallery/11.png" alt="Café Image 11" />
+        <img src="img/gallery/12.png" alt="Café Image 12" />
+        <img src="img/gallery/13.png" alt="Café Image 13" />
+        <img src="img/gallery/14.png" alt="Café Image 14 " />
+        <img src="img/gallery/15.png" alt="Café Image 15" />
+        <img src="img/gallery/16.png" alt="Café Image 16" />
+      </div>
+    </div>
+
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional JS for smooth scroll -->
+    <script>
+      const backToTop = document.querySelector(".back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
