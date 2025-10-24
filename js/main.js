@@ -103,9 +103,55 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         return;
     }
 
-    const ownerNumber = "919539309690"; // Owner's WhatsApp number with country code
+    const ownerNumber = "9882606242"; // Owner's WhatsApp number with country code
     const message = `Hello! I want to book a bed.\nName: ${name}\nPhone: ${phone}\nGuests: ${guests}\nFrom: ${fromDate}\nTo: ${toDate}`;
     const url = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank"); // Opens WhatsApp with pre-filled message
+});
+
+function initMenuScroll(rowId, speed = 0.5) {
+  const row = document.getElementById(rowId);
+  let scrollPos = 0;
+  let scrolling = true;
+
+  // Duplicate items for smooth infinite scroll
+  row.innerHTML += row.innerHTML;
+
+  function scrollStep() {
+    if(scrolling) {
+      scrollPos += speed;
+      if(scrollPos >= row.scrollWidth / 2) scrollPos = 0;
+      row.scrollLeft = scrollPos;
+    }
+    requestAnimationFrame(scrollStep);
+  }
+  scrollStep();
+
+  // Pause on hover
+  row.parentElement.addEventListener('mouseenter', () => scrolling = false);
+  row.parentElement.addEventListener('mouseleave', () => scrolling = true);
+
+  // Manual scroll buttons
+  const leftBtn = row.parentElement.querySelector('.scroll-btn.left');
+  const rightBtn = row.parentElement.querySelector('.scroll-btn.right');
+
+  leftBtn.addEventListener('click', () => row.scrollLeft -= 150);
+  rightBtn.addEventListener('click', () => row.scrollLeft += 150);
+}
+
+// Initialize all rows
+initMenuScroll('starters', 0.4);
+initMenuScroll('main-course', 0.6);
+initMenuScroll('desserts', 0.5);
+
+// WhatsApp order button
+const whatsappNumber = "9882606242"; // Replace with your number
+document.querySelectorAll('.order-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.dataset.item;
+    const price = button.dataset.price;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hello, is ${item} available?`)}`;
+    window.open(url, '_blank');
+  });
 });
