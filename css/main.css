@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .heading-cafe-name {
   font-size: 1.67vw;
   color: white;
@@ -86,6 +90,7 @@
 .about-img {
   transform: scale(1);
   transition: transform 0.6s ease;
+  margin-left: -13px;
 }
 
 .about-img.scroll-in {
@@ -221,7 +226,7 @@
   text-decoration: none;
 }
 
-.menu-section {
+#menu-section {
   background: #fdf6f0;
   padding: 50px 20px;
   font-family: "Arial", sans-serif;
@@ -271,7 +276,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
-   padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .menu-item:hover {
@@ -295,7 +300,6 @@
   font-weight: bold;
   color: #ff6b6b;
   font-size: 1rem;
- 
 }
 
 /* Responsive */
@@ -356,7 +360,7 @@
   right: 0;
 }
 
-.order-btn{
+.order-btn {
   border-radius: 7px;
   background-color: transparent;
   color: black;
