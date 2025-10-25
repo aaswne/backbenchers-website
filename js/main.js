@@ -1,23 +1,6 @@
 (function ($) {
     "use strict";
     
-    // Dropdown on mouse hover
-    $(document).ready(function () {
-        function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
-            } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
-            }
-        }
-        toggleNavbarMethod();
-        $(window).resize(toggleNavbarMethod);
-    });
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -110,48 +93,42 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     window.open(url, "_blank"); // Opens WhatsApp with pre-filled message
 });
 
-function initMenuScroll(rowId, speed = 0.5) {
-  const row = document.getElementById(rowId);
-  let scrollPos = 0;
-  let scrolling = true;
+document.querySelectorAll('.menu-row-wrapper').forEach(wrapper => {
+  const row = wrapper.querySelector('.menu-row');
+  const leftBtn = wrapper.querySelector('.scroll-btn.left');
+  const rightBtn = wrapper.querySelector('.scroll-btn.right');
 
-  // Duplicate items for smooth infinite scroll
-  row.innerHTML += row.innerHTML;
+  leftBtn.addEventListener('click', () => row.scrollBy({left: -250, behavior: 'smooth'}));
+  rightBtn.addEventListener('click', () => row.scrollBy({left: 250, behavior: 'smooth'}));
+});
 
-  function scrollStep() {
-    if(scrolling) {
-      scrollPos += speed;
-      if(scrollPos >= row.scrollWidth / 2) scrollPos = 0;
-      row.scrollLeft = scrollPos;
-    }
-    requestAnimationFrame(scrollStep);
-  }
-  scrollStep();
-
-  // Pause on hover
-  row.parentElement.addEventListener('mouseenter', () => scrolling = false);
-  row.parentElement.addEventListener('mouseleave', () => scrolling = true);
-
-  // Manual scroll buttons
-  const leftBtn = row.parentElement.querySelector('.scroll-btn.left');
-  const rightBtn = row.parentElement.querySelector('.scroll-btn.right');
-
-  leftBtn.addEventListener('click', () => row.scrollLeft -= 150);
-  rightBtn.addEventListener('click', () => row.scrollLeft += 150);
-}
-
-// Initialize all rows
-initMenuScroll('starters', 0.4);
-initMenuScroll('main-course', 0.6);
-initMenuScroll('desserts', 0.5);
-
-// WhatsApp order button
-const whatsappNumber = "9882606242"; // Replace with your number
+// WhatsApp order
+const whatsappNumber = "9882606242";
 document.querySelectorAll('.order-btn').forEach(button => {
   button.addEventListener('click', () => {
     const item = button.dataset.item;
-    const price = button.dataset.price;
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hello, is ${item} available?`)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hello, I want to order ${item}.`)}`;
     window.open(url, '_blank');
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll(".animate-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // optional: stop observing after animation
+      }
+    });
+  }, { threshold: 0.2 });
+
+  images.forEach(img => observer.observe(img));
+});
+
+
+
+
+
