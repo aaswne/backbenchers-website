@@ -129,6 +129,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+window.addEventListener('scroll', () => {
+  const images = document.querySelectorAll('#service .animate-up');
+  images.forEach((img, index) => {
+    const rect = img.getBoundingClientRect();
+    const offset = rect.top - window.innerHeight * 0.8;
+
+    // Faster movement
+    if (offset < 1) {
+      const move = Math.min(Math.abs(offset) / 3, 80); // speed increased
+      img.style.transform = index % 2 === 0
+        ? `translateX(${move}px)`
+        : `translateX(-${move}px)`;
+    } else {
+      img.style.transform = 'translateX(0)';
+    }
+  });
+});
+
 
 
 

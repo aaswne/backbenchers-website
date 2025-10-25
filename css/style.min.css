@@ -1535,7 +1535,8 @@ pre code {
 .table-primary tbody + tbody {
   border-color: #eccdaa;
 }
-.table-hover .table-primary:hover {
+.table-
+ .table-primary:hover {
   background-color: #f0d8bc;
 }
 .table-hover .table-primary:hover > td,
@@ -3086,11 +3087,7 @@ input[type="button"].btn-block {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
 }
-.dropdown-toggle-split::after,
-.dropup .dropdown-toggle-split::after,
-.dropright .dropdown-toggle-split::after {
-  margin-left: 0;
-}
+
 .dropleft .dropdown-toggle-split::before {
   margin-right: 0;
 }
@@ -8734,15 +8731,7 @@ h6,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #da9f5b;
 }
-.overlay-top::before,
-.overlay-bottom::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 15px;
-  left: 0;
-  z-index: 1;
-}
+
 .overlay-top::before {
   top: -1px;
   background: url(../img/overlay-top.png);
@@ -8760,16 +8749,8 @@ h6,
   z-index: 1;
 }
 
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 100px;
-  top: 0;
-  left: 50%;
-  margin-left: 1px;
-  background: #da9f5b;
-}
+
+
 .service-icon {
   margin-right: 15px;
   width: 45px;
@@ -8823,7 +8804,6 @@ h6,
   padding: 0;
   list-style-type: none;
 }
-.reservation,
 .page-header,
 .offer,
 .footer {

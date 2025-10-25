@@ -22,10 +22,14 @@ html {
 }
 
 .banner-text {
-  font-size: 8vw;
+  font-size: 9vw;
   font-family: fangsong;
   cursor: pointer;
+  color: pink;
 }
+
+
+
 
 .banner-text-2 {
   font-size: 6.9vw;
@@ -166,6 +170,7 @@ html {
   border-radius: 25px;
   transition: transform 0.3s ease; /* smooth animation */
   border-radius: 10px;
+  color: white;
 }
 
 .social-icon:hover {
@@ -477,4 +482,36 @@ html {
 
 .btn{
   border-radius: 10px;
+  cursor: pointer;
+    transition: transform 0.3s ease; /* smooth animation */
+
 }
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+.reservation{
+  padding: 8px;
+  border-radius: 50px;
+ 
+}
+
+/* Scroll-based left-right movement effect */
+#service .animate-up {
+  position: relative;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+#service .animate-up:nth-child(odd) {
+  transform: translateX(0);
+}
+
+#service .animate-up:nth-child(even) {
+  transform: translateX(0);
+}
+
+/* When scrolling, move left-right alternately */
+/* JavaScript code moved to separate file */
+
+

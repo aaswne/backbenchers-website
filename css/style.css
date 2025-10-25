@@ -3287,6 +3287,7 @@ input[type="button"].btn-block {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
 }
+  
 
 .dropdown-toggle-split::after,
 .dropup .dropdown-toggle-split::after,
@@ -9644,5 +9645,6 @@ h6,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
