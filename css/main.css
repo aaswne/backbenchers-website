@@ -491,27 +491,6 @@ html {
   transform: scale(1.1);
 }
 
-.reservation{
-  padding: 8px;
-  border-radius: 50px;
- 
-}
 
-/* Scroll-based left-right movement effect */
-#service .animate-up {
-  position: relative;
-  transition: transform 0.2s ease-out;
-  will-change: transform;
-}
-#service .animate-up:nth-child(odd) {
-  transform: translateX(0);
-}
-
-#service .animate-up:nth-child(even) {
-  transform: translateX(0);
-}
-
-/* When scrolling, move left-right alternately */
-/* JavaScript code moved to separate file */
 
 
