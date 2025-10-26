@@ -275,22 +275,7 @@ html {
   display: none;
 }
 
-.menu-item {
-  flex: 0 0 250px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  scroll-snap-align: start;
-  overflow: hidden;
-  position: relative;
-}
 
-.menu-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
-}
 
 .menu-item img {
   width: 100%;
@@ -321,9 +306,7 @@ html {
   transition: background 0.3s ease;
 }
 
-.order-btn:hover {
-  background-color: #ff4b4b;
-}
+
 
 .scroll-btn {
   position: absolute;
@@ -490,6 +473,61 @@ html {
 .btn:hover{
   transform: scale(1.1);
 }
+
+.menu-item {
+    position: relative;
+    padding-right: 40px; /* space for arrow */
+    margin-bottom: 12px;
+}
+
+.menu-text {
+    color: black; /* ensures text is visible */
+    font-size: 16px;
+}
+
+.circle-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: #ffae42; /* accent color */
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.circle-arrow:hover {
+    background-color: #ffd700;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* footer */
+.menu-item {
+  flex: 0 0 250px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: start;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* footer */
+
 
 
 

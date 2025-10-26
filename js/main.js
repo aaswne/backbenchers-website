@@ -25,6 +25,10 @@
     });
 
 
+
+
+
+
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -50,6 +54,8 @@
     });
     
 })(jQuery);
+
+
 
 const aboutImg = document.querySelector('.about-img');
 
@@ -93,24 +99,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     window.open(url, "_blank"); // Opens WhatsApp with pre-filled message
 });
 
-document.querySelectorAll('.menu-row-wrapper').forEach(wrapper => {
-  const row = wrapper.querySelector('.menu-row');
-  const leftBtn = wrapper.querySelector('.scroll-btn.left');
-  const rightBtn = wrapper.querySelector('.scroll-btn.right');
 
-  leftBtn.addEventListener('click', () => row.scrollBy({left: -250, behavior: 'smooth'}));
-  rightBtn.addEventListener('click', () => row.scrollBy({left: 250, behavior: 'smooth'}));
-});
-
-// WhatsApp order
-const whatsappNumber = "9882606242";
-document.querySelectorAll('.order-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const item = button.dataset.item;
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hello, I want to order ${item}.`)}`;
-    window.open(url, '_blank');
-  });
-});
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -128,6 +117,39 @@ document.addEventListener("DOMContentLoaded", function() {
   images.forEach(img => observer.observe(img));
 });
 
+    function filterMenu(category) {
+      const items = document.querySelectorAll('.menu-item');
+      const buttons = document.querySelectorAll('.menu-tabs .btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'block';
+          item.style.opacity = '1';
+        } else {
+          item.style.display = 'none';
+          item.style.opacity = '0';
+        }
+      });
+    }
+
+
+
+    // Simple filter menu functionality
+  function filterMenu(category) {
+    const items = document.querySelectorAll('.menu-item');
+    if(category === 'all') {
+      items.forEach(i => i.style.display = 'block');
+    } else {
+      items.forEach(i => i.style.display = i.classList.contains(category) ? 'block' : 'none');
+    }
+
+    // update active button
+    document.querySelectorAll('.menu-tabs .btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+  }
 
 
 

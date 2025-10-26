@@ -8813,3 +8813,65 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f6f2;
+  color: #3c2f2f;
+}
+
+/* Menu Card */
+.menu-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+  object-fit: cover;
+  height: 250px;
+}
+
+.text-brown {
+  color: #a7744a;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  left: -10px;
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+.menu-row {
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+/* Order Button */
+.order-btn {
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #25d366;
+  color: white;
+  border-color: #25d366;
+}
+
