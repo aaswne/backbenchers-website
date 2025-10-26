@@ -1,298 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Menu | Bloom & Brew</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <style>
-    /* 🌸 Base Styles */
-    body {
-      font-family: "Montserrat", sans-serif;
-      background-color: #f9f6f2;
-      color: #3c2f2f;
-      scroll-behavior: smooth;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Menu | Bloom & Brew</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* 🌸 Base Styles */
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f9f6f2;
+        color: #3c2f2f;
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+      }
 
-    h1, h2, h3 {
-      font-family: "Playfair Display", serif;
-    }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
 
-    /* 🌿 Header Section */
-    .menu-header {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(to bottom right, #f1e1d0, #f9f6f2);
-    }
+      /* 🌿 Header Section */
+      .menu-header {
+        text-align: center;
+        padding: 100px 20px 60px;
+        background: linear-gradient(to bottom right, #f1e1d0, #f9f6f2);
+      }
 
-    .menu-header h1 {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      color: #4e342e;
-    }
-
-    /* 🍰 Category Tabs */
-    .menu-tabs {
-      text-align: center;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-
-    .menu-tabs .btn {
-      border: none;
-      background-color: #f0e5dc;
-      color: #4e342e;
-      border-radius: 50px;
-      margin: 5px;
-      padding: 10px 20px;
-      transition: all 0.3s ease;
-      font-weight: 600;
-    }
-
-    .menu-tabs .btn.active,
-    .menu-tabs .btn:hover {
-      background-color: #a7744a;
-      color: #fff;
-    }
-
-    /* ☕ Menu Cards */
-    .menu-card {
-      border: none;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: transform 0.4s ease, box-shadow 0.3s ease;
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .menu-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-card img {
-      height: 200px;
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .menu-card .card-body {
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .menu-card h5 {
-      font-weight: 600;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-
-    .menu-card p {
-      color: #7b5e57;
-      font-size: 0.85rem;
-      margin-bottom: 10px;
-      flex-grow: 1;
-    }
-
-    .price {
-      color: #a7744a;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .btn-order {
-      background-color: #25D366;
-      color: #fff;
-      border-radius: 50px;
-      padding: 8px 20px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      text-align: center;
-      transition: background 0.3s ease;
-    }
-
-    .btn-order:hover {
-      background-color: #128C7E;
-      color: #fff;
-    }
-
-    /* 🌸 Footer */
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: #7b5e57;
-      background: #f1e1d0;
-      margin-top: 60px;
-    }
-
-    /* 📱 Responsive Adjustments */
-    @media (max-width: 768px) {
       .menu-header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        color: #4e342e;
       }
 
-      .menu-card img {
-        height: 180px;
-      }
-
-      .menu-card h5 {
-        font-size: 1rem;
-      }
-
-      .menu-card p {
-        font-size: 0.8rem;
-      }
-
-      .btn-order {
-        padding: 6px 15px;
-        font-size: 0.9rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .menu-header h1 {
-        font-size: 1.7rem;
-      }
-
-      .menu-card img {
-        height: 160px;
-      }
-
-      .menu-card h5 {
-        font-size: 0.95rem;
-      }
-
-      .menu-card p {
-        font-size: 0.75rem;
-      }
-
-      .btn-order {
-        padding: 5px 12px;
-        font-size: 0.85rem;
+      /* 🍰 Category Tabs */
+      .menu-tabs {
+        text-align: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
       }
 
       .menu-tabs .btn {
-        padding: 8px 15px;
-        margin: 3px;
-        font-size: 0.85rem;
+        border: none;
+        background-color: #f0e5dc;
+        color: #4e342e;
+        border-radius: 50px;
+        margin: 5px;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+        font-weight: 600;
       }
-    }
-  </style>
-</head>
 
-<body>
+      .menu-tabs .btn.active,
+      .menu-tabs .btn:hover {
+        background-color: #a7744a;
+        color: #fff;
+      }
 
-  <!-- 🌿 Header -->
-  <header class="menu-header">
-    <h1>What is your cravings</h1>
-  </header>
+      /* ☕ Menu Cards */
+      .menu-card {
+        border: none;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.3s ease;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
 
-  <!-- 🍰 Category Tabs -->
-  <div class="menu-tabs d-flex justify-content-center flex-wrap">
-    <button class="btn active" onclick="filterMenu('all')">All</button>
-    <button class="btn" onclick="filterMenu('coffee')">Coffee</button>
-    <button class="btn" onclick="filterMenu('desserts')">Desserts</button>
-    <button class="btn" onclick="filterMenu('meals')">Meals</button>
-  </div>
+      .menu-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
 
-  <!-- 🍮 Menu Grid -->
-  <div class="container">
-    <div class="row g-4" id="menu-grid">
+      .menu-card img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
 
-      <!-- Coffee Items -->
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/3yR8RkA.jpg" alt="Latte">
-          <div class="card-body">
-            <h5>Caramel Latte</h5>
-            <p>Espresso | steamed milk | caramel drizzle</p>
-            <span class="price">₹220</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Caramel Latte." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .menu-card .card-body {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/aK6LzFT.jpg" alt="Cold Brew">
-          <div class="card-body">
-            <h5>Cold Brew</h5>
-            <p>Slow brewed | bold taste | chilled</p>
-            <span class="price">₹180</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Cold Brew." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .menu-card h5 {
+        font-weight: 600;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+      }
 
-      <!-- Desserts -->
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Brownie">
-          <div class="card-body">
-            <h5>Hash Brownie</h5>
-            <p>Rich chocolate | gooey center</p>
-            <span class="price">₹160</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Hash Brownie." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .menu-card p {
+        color: #7b5e57;
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+        flex-grow: 1;
+      }
 
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/cChR2oJ.jpg" alt="Cheesecake">
-          <div class="card-body">
-            <h5>Classic Cheesecake</h5>
-            <p>New York style | creamy perfection</p>
-            <span class="price">₹240</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Classic Cheesecake." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .price {
+        color: #a7744a;
+        font-weight: 600;
+        font-size: 1rem;
+      }
 
-      <!-- Meals -->
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/8ak4M0Z.jpg" alt="Pasta">
-          <div class="card-body">
-            <h5>Creamy Alfredo Pasta</h5>
-            <p>Fresh herbs | parmesan | white sauce</p>
-            <span class="price">₹260</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Creamy Alfredo Pasta." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .btn-order {
+        background-color: transparent;
+        color: green;
+        border-radius: 50px;
+        padding: 8px 20px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        text-align: center;
+        transition: background 0.3s ease;
+        border: 1px solid green;
+      }
 
-      <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
-        <div class="card menu-card">
-          <img src="https://i.imgur.com/MXn0UL8.jpg" alt="Sandwich">
-          <div class="card-body">
-            <h5>Grilled Sandwich</h5>
-            <p>Cheese | tomato | basil pesto</p>
-            <span class="price">₹190</span>
-            <a href="https://wa.me/919876543210?text=Hi! I would like to order a Grilled Sandwich." target="_blank" class="btn-order">Order</a>
-          </div>
-        </div>
-      </div>
+      .btn-order:hover {
+        background-color: green;
+        color: white;
+      }
 
+      /* 🌸 Footer */
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #7b5e57;
+        background: #f1e1d0;
+        margin-top: 60px;
+      }
+
+      /* 📱 Responsive Adjustments */
+      @media (max-width: 768px) {
+        .menu-header h1 {
+          font-size: 2rem;
+        }
+
+        .menu-card img {
+          height: 180px;
+        }
+
+        .menu-card h5 {
+          font-size: 1rem;
+        }
+
+        .menu-card p {
+          font-size: 0.8rem;
+        }
+
+        .btn-order {
+          padding: 6px 15px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .menu-header h1 {
+          font-size: 1.7rem;
+        }
+
+        .menu-card img {
+          height: 160px;
+        }
+
+        .menu-card h5 {
+          font-size: 0.95rem;
+        }
+
+        .menu-card p {
+          font-size: 0.75rem;
+        }
+
+        .btn-order {
+          padding: 5px 12px;
+          font-size: 0.85rem;
+        }
+
+        .menu-tabs .btn {
+          padding: 8px 15px;
+          margin: 3px;
+          font-size: 0.85rem;
+        }
+      }
+      .back-button {
+        border: none;
+        display: flex;
+        background-color: green;
+        color: white;
+        padding: auto;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 🌿 Header -->
+    <header class="menu-header">
+      <a href="index.html">
+        <button class="back-button">Go Back</button>
+      </a>
+      <h1>What is your cravings</h1>
+    </header>
+
+    <!-- 🍰 Category Tabs -->
+    <div class="menu-tabs d-flex justify-content-center flex-wrap">
+      <button class="btn active" onclick="filterMenu('all')">All</button>
+      <button class="btn" onclick="filterMenu('coffee')">Coffee</button>
+      <button class="btn" onclick="filterMenu('desserts')">Desserts</button>
+      <button class="btn" onclick="filterMenu('meals')">Meals</button>
     </div>
-  </div>
 
-  <!-- 🌸 Footer -->
-  <footer>
-    <p>&copy; 2025 Bloom & Brew Café </p>
-  </footer>
+    <!-- 🍮 Menu Grid -->
+    <div class="container">
+      <div class="row g-4" id="menu-grid">
+        <!-- Coffee Items -->
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/3yR8RkA.jpg" alt="Latte" />
+            <div class="card-body">
+              <h5>Caramel Latte</h5>
+              <p>Espresso | steamed milk | caramel drizzle</p>
+              <span class="price">₹220</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Caramel Latte."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
 
-  <script src="js/main.js"></script>
-</body>
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/aK6LzFT.jpg" alt="Cold Brew" />
+            <div class="card-body">
+              <h5>Cold Brew</h5>
+              <p>Slow brewed | bold taste | chilled</p>
+              <span class="price">₹180</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Cold Brew."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Brownie" />
+            <div class="card-body">
+              <h5>Hash Brownie</h5>
+              <p>Rich chocolate | gooey center</p>
+              <span class="price">₹160</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Hash Brownie."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/cChR2oJ.jpg" alt="Cheesecake" />
+            <div class="card-body">
+              <h5>Classic Cheesecake</h5>
+              <p>New York style | creamy perfection</p>
+              <span class="price">₹240</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Classic Cheesecake."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Meals -->
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/8ak4M0Z.jpg" alt="Pasta" />
+            <div class="card-body">
+              <h5>Creamy Alfredo Pasta</h5>
+              <p>Fresh herbs | parmesan | white sauce</p>
+              <span class="price">₹260</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Creamy Alfredo Pasta."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
+          <div class="card menu-card">
+            <img src="https://i.imgur.com/MXn0UL8.jpg" alt="Sandwich" />
+            <div class="card-body">
+              <h5>Grilled Sandwich</h5>
+              <p>Cheese | tomato | basil pesto</p>
+              <span class="price">₹190</span>
+              <a
+                href="https://wa.me/919876543210?text=Hi! I would like to order a Grilled Sandwich."
+                target="_blank"
+                class="btn-order"
+                >Order</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌸 Footer -->
+    <footer>
+      <p>&copy; 2025 Bloom & Brew Café</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
