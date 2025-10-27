@@ -3,15 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Café Menu | Bloom & Brew</title>
+    <title>Menu | Backbenchers Café</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the Backbenchers Café menu — handcrafted coffees, desserts, and meals made for chill vibes and good times in Kasol." />
+    <meta name="keywords" content="Backbenchers Café, cafe in Kasol, coffee, desserts, meals, menu, food" />
+    <meta name="author" content="Backbenchers Café" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Backbenchers Café — Menu" />
+    <meta property="og:description" content="Discover your next favorite brew, bite, or dessert at Backbenchers Café, Kasol." />
+    <meta property="og:image" content="img/about.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/menu.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
     />
+
     <style>
       /* 🌸 Base Styles */
       body {
@@ -27,6 +56,10 @@
       h2,
       h3 {
         font-family: "Playfair Display", serif;
+      }
+
+      a {
+        text-decoration: none;
       }
 
       /* 🌿 Header Section */
@@ -133,6 +166,7 @@
       .btn-order:hover {
         background-color: green;
         color: white;
+
       }
 
       /* 🌸 Footer */
@@ -196,14 +230,28 @@
           font-size: 0.85rem;
         }
       }
-      .back-button {
-        border: none;
+
+       /* Back Button (centered like menu page) */
+      .back-btn-container {
         display: flex;
-        background-color: green;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .back-button {
+        background-color: #a0522d;
         color: white;
-        padding: auto;
-        border-radius: 5px;
-        text-decoration: none;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: #7b3f1d;
+        transform: scale(1.05);
       }
     </style>
   </head>
@@ -214,7 +262,7 @@
       <a href="index.html">
         <button class="back-button">Go Back</button>
       </a>
-      <h1>What is your cravings</h1>
+      <h1>What are you craving?</h1>
     </header>
 
     <!-- 🍰 Category Tabs -->
@@ -231,34 +279,24 @@
         <!-- Coffee Items -->
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/3yR8RkA.jpg" alt="Latte" />
+            <img src="https://i.imgur.com/3yR8RkA.jpg" alt="Caramel Latte" loading="lazy" />
             <div class="card-body">
               <h5>Caramel Latte</h5>
               <p>Espresso | steamed milk | caramel drizzle</p>
               <span class="price">₹220</span>
-              <a
-                href="https://wa.me/919882606242?text=Hi! I would like to order a Caramel Latte."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Caramel Latte." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item coffee">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/aK6LzFT.jpg" alt="Cold Brew" />
+            <img src="https://i.imgur.com/aK6LzFT.jpg" alt="Cold Brew" loading="lazy" />
             <div class="card-body">
               <h5>Cold Brew</h5>
               <p>Slow brewed | bold taste | chilled</p>
               <span class="price">₹180</span>
-              <a
-                href="https://wa.me/91919882606242?text=Hi! I would like to order a Cold Brew."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Cold Brew." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
@@ -266,34 +304,24 @@
         <!-- Desserts -->
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Brownie" />
+            <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Brownie" loading="lazy" />
             <div class="card-body">
               <h5>Hash Brownie</h5>
               <p>Rich chocolate | gooey center</p>
               <span class="price">₹160</span>
-              <a
-                href="https://wa.me/91919882606242?text=Hi! I would like to order a Hash Brownie."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Hash Brownie." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item desserts">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/cChR2oJ.jpg" alt="Cheesecake" />
+            <img src="https://i.imgur.com/cChR2oJ.jpg" alt="Cheesecake" loading="lazy" />
             <div class="card-body">
               <h5>Classic Cheesecake</h5>
               <p>New York style | creamy perfection</p>
               <span class="price">₹240</span>
-              <a
-                href="https://wa.me/91919882606242?text=Hi! I would like to order a Classic Cheesecake."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Classic Cheesecake." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
@@ -301,34 +329,24 @@
         <!-- Meals -->
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/8ak4M0Z.jpg" alt="Pasta" />
+            <img src="https://i.imgur.com/8ak4M0Z.jpg" alt="Pasta" loading="lazy" />
             <div class="card-body">
               <h5>Creamy Alfredo Pasta</h5>
               <p>Fresh herbs | parmesan | white sauce</p>
               <span class="price">₹260</span>
-              <a
-                href="https://wa.me/91919882606242?text=Hi! I would like to order a Creamy Alfredo Pasta."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Creamy Alfredo Pasta." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-12 menu-item meals">
           <div class="card menu-card">
-            <img src="https://i.imgur.com/MXn0UL8.jpg" alt="Sandwich" />
+            <img src="https://i.imgur.com/MXn0UL8.jpg" alt="Grilled Sandwich" loading="lazy" />
             <div class="card-body">
               <h5>Grilled Sandwich</h5>
               <p>Cheese | tomato | basil pesto</p>
               <span class="price">₹190</span>
-              <a
-                href="https://wa.me/91919882606242?text=Hi! I would like to order a Grilled Sandwich."
-                target="_blank"
-                class="btn-order"
-                >Order</a
-              >
+              <a href="https://wa.me/919882606242?text=Hi! I would like to order a Grilled Sandwich." target="_blank" class="btn-order">Order</a>
             </div>
           </div>
         </div>
@@ -337,9 +355,23 @@
 
     <!-- 🌸 Footer -->
     <footer>
-      <p>&copy; 2025 Bloom & Brew Café</p>
+      <p>&copy; 2025 Backbenchers Café — Kasol</p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+      // 🌸 Filter Function
+      function filterMenu(category) {
+        const items = document.querySelectorAll(".menu-item");
+        const buttons = document.querySelectorAll(".menu-tabs .btn");
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+        items.forEach((item) => {
+          item.style.display =
+            category === "all" || item.classList.contains(category)
+              ? "block"
+              : "none";
+        });
+      }
+    </script>
   </body>
 </html>
