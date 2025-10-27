@@ -28,22 +28,17 @@ html {
   color: pink;
 }
 
-@media screen and (max-width:786px) {
-  .banner-text{
-           margin-bottom: 10px;
+@media screen and (max-width: 786px) {
+  .banner-text {
+    margin-bottom: 10px;
   }
-  
 }
 
-@media screen and (max-width:786px) {
-  .banner-text-2{
-        margin-bottom: -151px;
+@media screen and (max-width: 786px) {
+  .banner-text-2 {
+    margin-bottom: -151px;
   }
-  
 }
-
-
-
 
 .banner-text-2 {
   font-size: 6.9vw;
@@ -71,7 +66,6 @@ html {
   left: 45%;
   background: repeating-linear-gradient(45deg, #8b4513 0 2px, #fff 2px 4px);
   -webkit-background-clip: text;
-
   border-radius: 127px;
   cursor: pointer;
   border: 0.5px solid white;
@@ -89,6 +83,7 @@ html {
     left: 176px;
     width: 130px;
     border-radius: 40px;
+    margin-top: -205px;
   }
 }
 
@@ -191,8 +186,6 @@ html {
   transform: scale(1.5);
 }
 
-
-
 .image-hover {
   border-radius: 30px;
   transform: scale(1);
@@ -275,8 +268,6 @@ html {
   display: none;
 }
 
-
-
 .menu-item img {
   width: 100%;
   height: 180px;
@@ -305,8 +296,6 @@ html {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
-
 
 .scroll-btn {
   position: absolute;
@@ -463,49 +452,48 @@ html {
   transform: scale(1.1);
 }
 
-.btn{
+.btn {
   border-radius: 10px;
   cursor: pointer;
-    transition: transform 0.3s ease; /* smooth animation */
-
+  transition: transform 0.3s ease; /* smooth animation */
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.1);
 }
 
 .menu-item {
-    position: relative;
-    padding-right: 40px; /* space for arrow */
-    margin-bottom: 12px;
+  position: relative;
+  padding-right: 40px; /* space for arrow */
+  margin-bottom: 12px;
 }
 
 .menu-text {
-    color: black; /* ensures text is visible */
-    font-size: 16px;
+  color: black; /* ensures text is visible */
+  font-size: 16px;
 }
 
 .circle-arrow {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    height: 28px;
-    background-color: #ffae42; /* accent color */
-    border-radius: 50%;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #ffae42; /* accent color */
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .circle-arrow:hover {
-    background-color: #ffd700;
-    transform: translateY(-50%) scale(1.1);
+  background-color: #ffd700;
+  transform: translateY(-50%) scale(1.1);
 }
 
 /* footer */
@@ -527,8 +515,3 @@ html {
 }
 
 /* footer */
-
-
-
-
-
