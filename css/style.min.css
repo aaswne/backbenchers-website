@@ -239,6 +239,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -293,7 +294,8 @@ progress {
 }
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  
+  : none;
 }
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -331,7 +333,7 @@ h6,
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.2;
-color: silver;
+  color: silver;
 }
 h1,
 .h1 {
@@ -1535,8 +1537,7 @@ pre code {
 .table-primary tbody + tbody {
   border-color: #eccdaa;
 }
-.table-
- .table-primary:hover {
+.table- .table-primary:hover {
   background-color: #f0d8bc;
 }
 .table-hover .table-primary:hover > td,
@@ -3254,7 +3255,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  accent-color: exact;
 }
 .custom-control-inline {
   display: inline-flex;
@@ -3765,8 +3766,6 @@ input[type="button"].btn-block {
   flex-grow: 1;
   align-items: center;
 }
-
-
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
@@ -8715,17 +8714,15 @@ h6,
   position: absolute;
   z-index: 9;
 }
- @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .container-fluid.nav-bar,
   .nav-bar.container-sm,
   .nav-bar.container-md,
   .nav-bar.container-lg,
   .nav-bar.container-xl {
     position: relative;
-  
-  } 
-} 
-
+  }
+}
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
@@ -8748,8 +8745,6 @@ h6,
   background: rgba(51, 33, 29, 0.7);
   z-index: 1;
 }
-
-
 
 .service-icon {
   margin-right: 15px;
@@ -8874,4 +8869,3 @@ h6,
   color: white;
   border-color: #25d366;
 }
-

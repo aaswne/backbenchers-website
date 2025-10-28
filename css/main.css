@@ -44,11 +44,14 @@ html {
   font-size: 6.9vw;
   background: repeating-linear-gradient(45deg, #8b4513 0 2px, #fff 2px 4px);
   -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   font-family: fangsong;
   cursor: pointer;
 }
+
 
 .banner-text:hover {
   color: white;
@@ -520,4 +523,16 @@ html {
   border-radius: 20px;
   overflow: hidden;
 }
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card{
+  background: repeating-linear-gradient(45deg, #8b4513 0 2px, #fff 2px 4px);
+  -webkit-background-clip: text;
+      border-radius: 20px;
+}
+
 
