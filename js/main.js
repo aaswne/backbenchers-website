@@ -80,6 +80,11 @@ document.getElementById('submitBtn').addEventListener('click', function () {
 // booking room whataspp//// booking room whataspp//// booking room whataspp//
 
 
+
+
+
+
+
 // service image section//// service image section//// service image section//// service image section//
 
 document.addEventListener("DOMContentLoaded", function () {
