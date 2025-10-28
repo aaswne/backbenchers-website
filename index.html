@@ -184,47 +184,74 @@
 
     <!-- Service End -->
 
-    <!-- ONLINE RESERVATION START -->
-     <section id="reservation">
-    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
-  <div class="container  py-5  ">
 
-    <h1 class="text-white mb-3">Stay Smart, Book Online</h1>
-    <h4 class="text-white font-weight-normal mb-4 pb-3">
-      Book your stay in advance through our website and get 30% off your first booking — we’ll confirm your reservation via WhatsApp.
-    </h4>
+<!-- ONLINE RESERVATION START -->
+<section id="reservation" 
+  class="text-white text-center py-5" 
+  style="background: url('img/2nd-banner.webp') center/cover no-repeat; 
+         position: relative;">
+  
+  <!-- No dark overlay here -->
+  <div class="container py-5">
+    <h1 class="fw-light mb-3">Stay Smart, Book Online</h1>
+    <p class="mb-4 fs-5 opacity-75">
+      Book your stay in advance through our website and get <strong>30% off</strong> your first booking — 
+      we’ll confirm your reservation via WhatsApp.
+    </p>
 
-    <form class="w-60 form-layout mx-auto">
+    <form class="mx-auto" style="max-width: 480px;">
       <div class="mb-3">
-        <input type="text" class="form-control p-3" id="name" placeholder="Your Name" required>
+        <input type="text" 
+               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
+               placeholder="Your Name" required
+               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
       </div>
 
       <div class="mb-3">
-        <input type="tel" class="form-control p-3" id="phone" placeholder="Phone Number" required>
+        <input type="tel" 
+               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
+               placeholder="Phone Number" required
+               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
       </div>
 
       <div class="mb-3">
-        <input type="number" class="form-control p-3" id="guests" placeholder="Number of Guests" min="1" required>
+        <input type="number" 
+               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
+               placeholder="Number of Guests" min="1" required
+               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
       </div>
 
-      <div class="mb-3 text-start">
-        <label for="fromDate" class="text-white mb-2">Chek-In</label>
-        <input type="date" class="form-control p-3" id="fromDate" required>
+      <div class="row g-3 text-start">
+        <div class="col-12 col-md-6">
+          <label class="small opacity-75 mb-2">Check-In</label>
+          <input type="date" 
+                 class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
+                 required
+                 style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="small opacity-75 mb-2">Check-Out</label>
+          <input type="date" 
+                 class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
+                 required
+                 style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+        </div>
       </div>
 
-      <div class="mb-3 text-start">
-        <label for="toDate" class="text-white mb-2">Check-Out</label>
-        <input type="date" class="form-control p-3" id="toDate" required>
-      </div>
-
-      <div class="bed-button">
-        <button type="button" class="btn btn-success" id="submitBtn">Reserve a Bed</button>
+      <div class="d-grid mt-4">
+        <button type="button" 
+                class="btn btn-lg rounded-4 py-3 shadow"
+                style="background: rgba(139,94,60,0.85); backdrop-filter: blur(10px); border: none; color: #fff;">
+          Reserve a Bed
+        </button>
       </div>
     </form>
   </div>
-</div>
 </section>
-    <!-- ONLINE RESERVATION END -->
+<!-- ONLINE RESERVATION END -->
+
+
+
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5 ">
