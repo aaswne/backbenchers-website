@@ -20,9 +20,12 @@
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.ico" />
 
-  <!-- Google Fonts (Optimized preload) -->
+  <!-- AOS CSS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
@@ -38,367 +41,244 @@
 </head>
 
 <body>
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="heading-cafe-name">BACKBENCHERES-CAFE</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon">☰</span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link ">About</a>
-                    <a href="#service" class="nav-item nav-link">Service</a>
-                    <a href="#reservation" class="nav-item nav-link">Stay With Us</a>
-                    <a href="menu.html" class="nav-item nav-link">Explore Menu</a>
-                     <a href="#contact-section" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <a href="index.html" class="navbar-brand px-lg-4 m-0">
+        <h1 class="heading-cafe-name">BACKBENCHERES-CAFE</h1>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon">☰</span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto p-4">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#service" class="nav-item nav-link">Service</a>
+          <a href="#reservation" class="nav-item nav-link">Stay With Us</a>
+          <a href="menu.html" class="nav-item nav-link">Explore Menu</a>
+          <a href="#contact-section" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
 
-      <!-- Banner Start -->
-<div class="container-fluid p-0 mb-5">
-  <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <!-- Image Banner -->
-        <img src="img/banner.webp" class="w-100" alt="Café Banner">
-
-        <a href="https://maps.app.goo.gl/UWbmHkggy3cnZ3S57" target="_blank" class="get-direction">
-          Get Direction
-        </a>
-
-        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-          <h2 class="banner-text">We Accept Cookies</h2>
-          <h1 class="banner-text-2">But We Prefer Brownies</h1>
+  <!-- Banner Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/banner.webp" class="w-100" alt="Café Banner">
+          <a href="https://maps.app.goo.gl/UWbmHkggy3cnZ3S57" target="_blank" class="get-direction">Get Direction</a>
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <h2 class="banner-text">We Accept Cookies</h2>
+            <h1 class="banner-text-2">But We Prefer Brownies</h1>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Banner End -->
+  <!-- Banner End -->
 
-    <!-- About Start -->
-     <section id="about">
+  <!-- About Start -->
+  <section id="about">
     <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
-           
-            </div>
-            <div class="row">
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Who We Are</h1>
-                    <p class="mb-3">We are a cozy café and stay in Kasol, Himachal Pradesh, nestled in the heart of the Parvati Valley. Surrounded by mountains and peaceful vibes, our space is made for travelers, food lovers, and anyone looking to relax close to nature</p>
-                    <a href="gallery.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">View Gallery</a>
-                </div>
-
-                <div>
-                  <img class="about-img" src="img/about.png" alt="">
-                </div>
-                
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">What We Offer</h1>
-                    <p>We serve fresh food, warm drinks, and great company every day. Along with tasty meals, we offer comfortable rooms and tents for a relaxed stay in the mountains.</p>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>24-hour hot water</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Unlimited Wi-Fi</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>24×7 support</h5>
-                    <a href="https://example.com/m85806-56930" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Talk to Us</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
         </div>
+        <div class="row">
+          <div class="col-lg-4 py-0 py-lg-5">
+            <h1 class="mb-3">Who We Are</h1>
+            <p class="mb-3">We are a cozy café and stay in Kasol, Himachal Pradesh, nestled in the heart of the Parvati Valley. Surrounded by mountains and peaceful vibes, our space is made for travelers, food lovers, and anyone looking to relax close to nature.</p>
+            <a href="gallery.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">View Gallery</a>
+          </div>
+
+          <div>
+            <img class="about-img" src="img/about.png" alt="">
+          </div>
+
+          <div class="col-lg-4 py-0 py-lg-5">
+            <h1 class="mb-3">What We Offer</h1>
+            <p>We serve fresh food, warm drinks, and great company every day. Along with tasty meals, we offer comfortable rooms and tents for a relaxed stay in the mountains.</p>
+            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>24-hour hot water</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Unlimited Wi-Fi</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>24×7 support</h5>
+            <a href="https://example.com/m85806-56930" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Talk to Us</a>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-    <!-- About End -->
+  </section>
+  <!-- About End -->
 
-<!-- Services Section Start -->
-<section id="service" class="py-5" style="background: #f9f5f0;">
-  <div class="container">
-    
-    <!-- Left-Aligned Section Title -->
-    <div class="section-title mb-4 text-start">
-      <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+  <!-- Services Section Start -->
+  <section id="service" class="py-5" style="background: #f9f5f0;">
+    <div class="container">
+      <div class="section-title mb-4 text-start" data-aos="fade-right">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+      </div>
+      <div class="row g-4">
+
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow">
+            <img src="img/service-1.webp" alt="Fastest Door Delivery" class="card-img-top rounded-4 mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-truck text-primary me-2"></i>Fastest Door Delivery</h5>
+              <p class="card-text text-muted small">Hot and fresh meals served right to your room or doorstep — unwind and enjoy Himalayan warmth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow">
+            <img src="img/service-2.webp" alt="Café & Kitchen" class="card-img-top rounded-4 mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-coffee text-primary me-2"></i>Café & Kitchen</h5>
+              <p class="card-text text-muted small">Taste the best of Kasol — aromatic coffee and fresh local delicacies made with love.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow">
+            <img src="img/service-3.webp" alt="Online Reservation" class="card-img-top rounded-4 mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-award text-primary me-2"></i>Online Reservation</h5>
+              <p class="card-text text-muted small">Book instantly through WhatsApp. No waiting — just one click and your bed is ready.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow">
+            <img src="img/service-4.webp" alt="Tents & Private Rooms" class="card-img-top rounded-4 mb-3">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fa fa-table text-primary me-2"></i>Tents & Private Rooms</h5>
+              <p class="card-text text-muted small">Cozy beds with mountain views — perfect for solo travelers or groups.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+  <!-- Services Section End -->
 
-    <div class="row g-4">
-
-      <!-- Service Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow" style="transition: all 0.3s ease;">
-          <img src="img/service-1.webp" alt="Fastest Door Delivery" class="card-img-top rounded-4 mb-3">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-truck text-primary me-2"></i>Fastest Door Delivery</h5>
-            <p class="card-text text-muted small">Hot and fresh meals served right to your room or doorstep — unwind and enjoy Himalayan warmth.</p>
+  <!-- ONLINE RESERVATION SECTION -->
+  <section id="reservation" class="text-white text-center py-5 my-5"
+    style="background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), center/cover no-repeat;
+      border-radius: 20px; max-width: 100%; margin: 0 auto; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); position: relative;">
+    <div class="container py-5 position-relative" style="z-index: 2;">
+      <h1 class="fw-light mb-3">Stay Smart, Book Online</h1>
+      <p class="mb-4 fs-5 opacity-75">
+        Book your stay in advance through our website and get <strong>30% off</strong> your first booking — we’ll confirm your reservation via WhatsApp.
+      </p>
+      <form class="mx-auto" style="max-width: 480px;">
+        <div class="mb-3">
+          <input type="text" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+            placeholder="Your Name" required
+            style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+            placeholder="Phone Number" required
+            style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+        </div>
+        <div class="mb-3">
+          <input type="number" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+            placeholder="Number of Guests" min="1" required
+            style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+        </div>
+        <div class="row g-3 text-start">
+          <div class="col-12 col-md-6">
+            <label class="small opacity-75 mb-2">Check-In</label>
+            <input type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
+              style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="small opacity-75 mb-2">Check-Out</label>
+            <input type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
+              style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
           </div>
         </div>
-      </div>
+        <div class="d-grid mt-4">
+          <button type="button" class="btn btn-lg rounded-4 py-3 shadow"
+            style="background: rgba(139,94,60,0.9); border: none; color: #fff; transition: all 0.3s ease;">
+            Reserve a Bed
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- ONLINE RESERVATION END -->
 
-      <!-- Service Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow" style="transition: all 0.3s ease;">
-          <img src="img/service-2.webp" alt="Café & Kitchen" class="card-img-top rounded-4 mb-3">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-coffee text-primary me-2"></i>Café & Kitchen</h5>
-            <p class="card-text text-muted small">Taste the best of Kasol — aromatic coffee and fresh local delicacies made with love.</p>
-          </div>
+  <!-- Testimonial Start -->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
+      </div>
+      <div class="owl-carousel testimonial-carousel">
+        <div class="testimonial-item">
+          <h4>Saheer Khan</h4>
+          <p class="m-0">Backbenchers Café is my favorite spot in Kasol! The view from Choj is straight out of a postcard — riverside breeze, mountain backdrop, and music that just fits the vibe. Their Nutella pancakes are a must-try!</p>
+        </div>
+        <div class="testimonial-item">
+          <h4>Alwyn John</h4>
+          <p class="m-0">Found this café by chance while exploring Choj. Ended up staying for hours! The atmosphere is super relaxed, and the people here are kind and genuine. Best chai I’ve had in the Himalayas.</p>
+        </div>
+        <div class="testimonial-item">
+          <h4>Stanly</h4>
+          <p class="m-0">Backbenchers Café has this magical mountain energy — great food, soulful music, and a view that makes you forget everything else. Loved their wood-fired pizza and cozy setup.</p>
+        </div>
+        <div class="testimonial-item">
+          <h4>Aswin Krishna</h4>
+          <p class="m-0">My friend recommended this café in Choj—ended up staying hours! Chill vibes, kind people, and the best chai in the Himalayas.</p>
         </div>
       </div>
-
-      <!-- Service Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow" style="transition: all 0.3s ease;">
-          <img src="img/service-3.webp" alt="Online Reservation" class="card-img-top rounded-4 mb-3">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-award text-primary me-2"></i>Online Reservation</h5>
-            <p class="card-text text-muted small">Book instantly through WhatsApp. No waiting — just one click and your bed is ready.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100 border-0 shadow-sm rounded-4 p-3 hover-shadow" style="transition: all 0.3s ease;">
-          <img src="img/service-4.webp" alt="Tents & Private Rooms" class="card-img-top rounded-4 mb-3">
-          <div class="card-body">
-            <h5 class="card-title"><i class="fa fa-table text-primary me-2"></i>Tents & Private Rooms</h5>
-            <p class="card-text text-muted small">Cozy beds with mountain views — perfect for solo travelers or groups.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
-</section>
-<!-- Services Section End -->
+  <!-- Testimonial End -->
 
-<!-- Hover Shadow Effect -->
-<style>
-  .hover-shadow:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-
-  .section-title h4 {
-    font-weight: 600;
-  }
-
-  @media (max-width: 768px) {
-    .section-title {
-      text-align: center;
-    }
-  }
-</style>
-
-<!-- Minimal Style -->
-<style>
-  #service h5 {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-  }
-
-  #service p {
-    line-height: 1.6;
-  }
-
-  #service img {
-    transition: transform 0.3s ease;
-  }
-
-  #service img:hover {
-    transform: scale(1.03);
-  }
-
-  @media (max-width: 576px) {
-    #service .col-lg-6 {
-      text-align: center;
-    }
-  }
-</style>
-
-
-
-<!-- ONLINE RESERVATION START -->
-<section id="reservation" 
-  class="text-white text-center py-5 my-5"
-  style="
-background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)),
- center/cover no-repeat;
-      border-radius: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    position: relative;
-  ">
-
-  <!-- optional overlay to improve text readability -->
-  <div style="
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.35);
-  "></div>
-
-  <div class="container py-5 position-relative" style="z-index: 2;">
-    <h1 class="fw-light mb-3">Stay Smart, Book Online</h1>
-    <p class="mb-4 fs-5 opacity-75">
-      Book your stay in advance through our website and get 
-      <strong>30% off</strong> your first booking — we’ll confirm your reservation via WhatsApp.
-    </p>
-
-    <form class="mx-auto" style="max-width: 480px;">
-      <div class="mb-3">
-        <input type="text" 
-               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
-               placeholder="Your Name" required
-               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-      </div>
-
-      <div class="mb-3">
-        <input type="tel" 
-               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
-               placeholder="Phone Number" required
-               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-      </div>
-
-      <div class="mb-3">
-        <input type="number" 
-               class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
-               placeholder="Number of Guests" min="1" required
-               style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-      </div>
-
-      <div class="row g-3 text-start">
-        <div class="col-12 col-md-6">
-          <label class="small opacity-75 mb-2">Check-In</label>
-          <input type="date" 
-                 class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
-                 required
-                 style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-        </div>
-        <div class="col-12 col-md-6">
-          <label class="small opacity-75 mb-2">Check-Out</label>
-          <input type="date" 
-                 class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" 
-                 required
-                 style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-        </div>
-      </div>
-
-      <div class="d-grid mt-4">
-        <button type="button" 
-                class="btn btn-lg rounded-4 py-3 shadow"
-                style="
-                  background: rgba(139,94,60,0.9);
-                  border: none; 
-                  color: #fff; 
-                  transition: all 0.3s ease;">
-          Reserve a Bed
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
-<!-- ONLINE RESERVATION END -->
-
-
-
-
-
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5 ">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h4>
-            
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="ml-3">
-                            <h4>Saheer Khan</h4>
-                        </div>
-                    </div>
-                    <p class="m-0">Backbenchers Café is my favorite spot in Kasol! The view from Choj is straight out of a postcard — riverside breeze, mountain backdrop, and music that just fits the vibe. Their Nutella pancakes are a must-try!</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                       
-                        <div class="ml-3">
-                            <h4>Alwyn John</h4>
-                        
-                        </div>
-                    </div>
-                    <p class="m-0"> Found this café by chance while exploring Choj. Ended up staying for hours! The atmosphere is super relaxed, and the people here are kind and genuine. Best chai I’ve had in the Himalayas.</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                      
-                        <div class="ml-3">
-                            <h4>Stanly </h4>
-                         
-                        </div>
-                    </div>
-                    <p class="m-0">Backbenchers Café has this magical mountain energy — great food, soulful music, and a view that makes you forget everything else. Loved their wood-fired pizza and cozy setup</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                      
-                        <div class="ml-3">
-                            <h4>Aswin Krishna</h4>
-                     
-                        </div>
-                    </div>
-                    <p class="m-0"> My friend recommended this café in Choj—ended up staying hours! Chill vibes, kind people, and the best chai in the Himalayas.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-     <!-- Contact Start -->
-      <section id="contact-section">
+  <!-- Contact Start -->
+  <section id="contact-section">
     <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
-                <h1 class="display-4">Don’t be shy, speak</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 pb-5">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            
-                            <div class="control-group">
-                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
+          <h1 class="display-4">Don’t be shy, speak</h1>
         </div>
+        <div class="row">
+          <div class="col-md-6 pb-5">
+            <div class="contact-form">
+              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                  <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Your Name"
+                    required="required" data-validation-required-message="Please enter your name" />
+                </div>
+                <div class="control-group">
+                  <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Message"
+                    required="required" data-validation-required-message="Please enter your message"></textarea>
+                </div>
+                <div>
+                  <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send
+                    Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Contact End -->
+  </section>
+  <!-- Contact End -->
+
 
 
 
@@ -460,22 +340,43 @@ background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)),
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+   <!-- ==================== JAVASCRIPT FILES ==================== -->
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+<!-- Core JS (Load jQuery First) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Bootstrap (Only One Version — 4.4.1 to match your CSS) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<!-- Animation & Utility Libraries -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+
+<!-- Carousel & Date/Time Picker -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Contact Form JS -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Custom Site Scripts -->
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Initialize AOS Animation -->
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<!-- =========================================================== -->
+
+    
 </body>
 
 </html>

@@ -141,5 +141,13 @@ function filterMenu(category) {
 // Simple filter menu functionality//// Simple filter menu functionality//// Simple filter menu functionality//
 
 
+// index.HTML AOS ANIMATION 
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 800, // animation speed in ms
+    once: true,    // run animation only once
+    offset: 100,   // trigger offset
+  });
+});
 
 
