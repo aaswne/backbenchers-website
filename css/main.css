@@ -52,7 +52,6 @@ html {
   cursor: pointer;
 }
 
-
 .banner-text:hover {
   color: white;
 }
@@ -529,10 +528,24 @@ html {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-.card{
+.card {
   background: repeating-linear-gradient(45deg, #8b4513 0 2px, #fff 2px 4px);
   -webkit-background-clip: text;
-      border-radius: 20px;
+  border-radius: 20px;
+  background: #f1ebe3;
 }
 
+#service img {
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
 
+.footer {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)),
+    url(../img/bg..jpgnavbar-toggler);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -294,8 +294,8 @@ progress {
 }
 [type="search"] {
   outline-offset: -2px;
-  
-  : none;
+
+  :none ;
 }
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
