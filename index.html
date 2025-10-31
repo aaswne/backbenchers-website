@@ -171,51 +171,53 @@
   <!-- Services Section End -->
 
   <!-- ONLINE RESERVATION SECTION -->
-  <section id="reservation" class="text-white text-center py-5 my-5"
-    style="background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), center/cover no-repeat;
-      border-radius: 20px; max-width: 100%; margin: 0 auto; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); position: relative;">
-    <div class="container py-5 position-relative" style="z-index: 2;">
-      <h1 class="fw-light mb-3">Stay Smart, Book Online</h1>
-      <p class="mb-4 fs-5 opacity-75">
-        Book your stay in advance through our website and get <strong>30% off</strong> your first booking — we’ll confirm your reservation via WhatsApp.
-      </p>
-      <form class="mx-auto" style="max-width: 480px;">
-        <div class="mb-3">
-          <input type="text" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
-            placeholder="Your Name" required
+ <section id="reservation" class="text-white text-center py-5 my-5"
+  style="background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), center/cover no-repeat;
+  border-radius: 20px; max-width: 100%; margin: 0 auto; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); position: relative;">
+  <div class="container py-5 position-relative" style="z-index: 2;">
+    <h1 class="fw-light mb-3">Stay Smart, Book Online</h1>
+    <p class="mb-4 fs-5 opacity-75">
+      Book your stay in advance through our website and get <strong>30% off</strong> your first booking — we’ll confirm your reservation via WhatsApp.
+    </p>
+    <form class="mx-auto" style="max-width: 480px;">
+      <div class="mb-3">
+        <input id="name" type="text" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+          placeholder="Your Name" required
+          style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+      </div>
+      <div class="mb-3">
+        <input id="phone" type="tel" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+          placeholder="Phone Number" required
+          style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+      </div>
+      <div class="mb-3">
+        <input id="guests" type="number" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
+          placeholder="Number of Guests" min="1" required
+          style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+      </div>
+      <div class="row g-3 text-start">
+        <div class="col-12 col-md-6">
+          <label class="small opacity-75 mb-2">Check-In</label>
+          <input id="fromDate" type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
             style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
         </div>
-        <div class="mb-3">
-          <input type="tel" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
-            placeholder="Phone Number" required
+        <div class="col-12 col-md-6">
+          <label class="small opacity-75 mb-2">Check-Out</label>
+          <input id="toDate" type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
             style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
         </div>
-        <div class="mb-3">
-          <input type="number" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm"
-            placeholder="Number of Guests" min="1" required
-            style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-        </div>
-        <div class="row g-3 text-start">
-          <div class="col-12 col-md-6">
-            <label class="small opacity-75 mb-2">Check-In</label>
-            <input type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
-              style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-          </div>
-          <div class="col-12 col-md-6">
-            <label class="small opacity-75 mb-2">Check-Out</label>
-            <input type="date" class="form-control form-control-lg border-0 rounded-4 text-white shadow-sm" required
-              style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-          </div>
-        </div>
-        <div class="d-grid mt-4">
-          <button type="button" class="btn btn-lg rounded-4 py-3 shadow"
-            style="background: rgba(139,94,60,0.9); border: none; color: #fff; transition: all 0.3s ease;">
-            Reserve a Bed
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
+      </div>
+      <div class="d-grid mt-4">
+        <button id="submitBtn" type="button" class="btn btn-lg rounded-4 py-3 shadow"
+          style="background: rgba(139,94,60,0.9); border: none; color: #fff; transition: all 0.3s ease;">
+          Reserve a Bed
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
   <!-- ONLINE RESERVATION END -->
 
   <!-- Testimonial Start -->

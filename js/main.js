@@ -59,24 +59,30 @@
 
 
 // booking room whataspp//// booking room whataspp//// booking room whataspp//
-document.getElementById('submitBtn').addEventListener('click', function () {
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const guests = document.getElementById('guests').value.trim();
-  const fromDate = document.getElementById('fromDate').value.trim();
-  const toDate = document.getElementById('toDate').value.trim();
+document.addEventListener("DOMContentLoaded", function () {
+  const submitBtn = document.getElementById('submitBtn');
 
-  if (!name || !phone || !guests || !fromDate || !toDate) {
-    alert("Please fill all fields!");
-    return;
-  }
+  submitBtn.addEventListener('click', function () {
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const guests = document.getElementById('guests').value.trim();
+    const fromDate = document.getElementById('fromDate').value.trim();
+    const toDate = document.getElementById('toDate').value.trim();
 
-  const ownerNumber = "9882606242"; // Owner's WhatsApp number with country code
-  const message = `Hello! I want to book a bed.\nName: ${name}\nPhone: ${phone}\nGuests: ${guests}\nFrom: ${fromDate}\nTo: ${toDate}`;
-  const url = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
+    if (!name || !phone || !guests || !fromDate || !toDate) {
+      alert("Please fill all fields!");
+      return;
+    }
 
-  window.open(url, "_blank"); // Opens WhatsApp with pre-filled message
+    const ownerNumber = "919882606242"; // ✅ include country code
+    const message = `Hello! I want to book a bed.\nName: ${name}\nPhone: ${phone}\nGuests: ${guests}\nFrom: ${fromDate}\nTo: ${toDate}`;
+    const url = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  });
 });
+
+
 // booking room whataspp//// booking room whataspp//// booking room whataspp//
 
 
