@@ -456,6 +456,7 @@ html {
 
 .btn {
   border-radius: 10px;
+  margin-top: 10px;
   cursor: pointer;
   transition: transform 0.3s ease; /* smooth animation */
 }
